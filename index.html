@@ -3,16 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio 3°H</title>
+    <title>Mi Portafolio Digital - 3°H</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        /* Estilos base del documento */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+        
+        /* Encabezado */
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* Barra de navegación */
+        nav {
+            background-color: #334155;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #0ea5e9;
+            border-radius: 4px;
+        }
+        
+        /* Contenedor principal con Flexbox */
+        main {
+            display: flex;
+            min-height: 450px;
+        }
+        
+        /* Menú Lateral */
+        aside {
+            width: 25%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #e2e8f0;
+        }
+        aside h3 {
+            color: #1e293b;
+            border-bottom: 2px solid #0ea5e9;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        aside li {
+            margin: 12px 0;
+        }
+        aside a {
+            color: #475569;
+            text-decoration: none;
+            display: inline-block;
+            padding: 6px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+        }
+        aside a:hover {
+            background-color: #f1f5f9;
+            color: #0ea5e9;
+            padding-left: 12px;
+            border-radius: 4px;
+        }
+        
+        /* Sección del Visor (Iframe) */
+        section {
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 2px solid #334155;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+        
+        /* Pie de página */
+        footer {
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            clear: both;
+        }
+        footer span {
+            color: #0ea5e9;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Portafolio</h1>
-    <p>Somos Hernández y Cabaleiro de 3ºH</p>
-    <ul>
-        <li><a href="./pages/listas.html">Ejercicio 1:</a> Listas</li>
-        <li><a href="./pages/tabla1.html">Ejercicio 2:</a> Tablas</li>
-        <li><a href="./pages/tienda.html">Ejercicio 3:</a> Trabajo Práctico</li>
-        <li><a href="./pages/semantica.html">Ejercicio 4:</a> Semántica</li>
-    </ul>
+
+    <header>
+        <h1>Mi Portafolio Digital</h1>
+        <p>Hernández y Cabaleiro - 3ºH</p>
+    </header>
+
+    <nav>
+        <a href="https://github.com/" target="_blank">
+            <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="https://drive.google.com/" target="_blank">
+            <i class="bi bi-google"></i> Google Drive
+        </a>
+    </nav>
+
+    <main>
+        
+        <aside>
+            <h3>Mis Ejercicios</h3>
+            <ul>
+                <li>
+                    <a href="./pages/listas.html" target="visor">
+                        <i class="bi bi-list-task"></i> Ejercicio 1: Listas
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/tablas.html" target="visor">
+                        <i class="bi bi-table"></i> Ejercicio 2: Tablas
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/tienda.html" target="visor">
+                        <i class="bi bi-shop"></i> Ejercicio 3: Trabajo Práctico
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/semantica.html" target="visor">
+                        <i class="bi bi-code-square"></i> Ejercicio 4: Semántica
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <section>
+            <iframe src="./pages/listas.html" name="visor" title="Visor de Ejercicios"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Diseñado por: <span>Nicolás Hernández</span> y <span>Matías Cabaleiro</span> | Curso: <span>3º H</span></p>
+    </footer>
+
 </body>
 </html>
