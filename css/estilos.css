@@ -1,1 +1,264 @@
+```css id="bqj5v5"
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+
+/* =========================================
+   BARRA DE NAVEGACIÓN
+   ========================================= */
+
+nav {
+    background-color: #334155;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #0ea5e9;
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   CONTENIDO PRINCIPAL DEL INDEX
+   ========================================= */
+
+main {
+    display: flex;
+    min-height: 450px;
+}
+
+
+/* =========================================
+   MENÚ LATERAL
+   ========================================= */
+
+aside {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #e2e8f0;
+}
+
+aside h3 {
+    color: #1e293b;
+    border-bottom: 2px solid #0ea5e9;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin: 12px 0;
+}
+
+aside a {
+    color: #475569;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+aside a:hover {
+    background-color: #f1f5f9;
+    color: #0ea5e9;
+    padding-left: 12px;
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   VISOR / IFRAME
+   ========================================= */
+
+section {
+    width: 75%;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 2px solid #334155;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+footer {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+footer span {
+    color: #0ea5e9;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PÁGINAS DE HOBBIES Y MÚSICA
+   ========================================= */
+
+.pagina {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.pagina h1 {
+    color: #1e293b;
+    text-align: center;
+    margin-top: 0;
+}
+
+.pagina > p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   MENÚ DE LAS PÁGINAS
+   ========================================= */
+
+.menu-pagina {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.menu-pagina a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #334155;
+    text-decoration: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.menu-pagina a:hover {
+    background-color: #0ea5e9;
+}
+
+
+/* =========================================
+   CONTENEDOR DE CARDS
+   ========================================= */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.card {
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    background-color: #f8fafc;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ADAPTACIÓN PARA PANTALLAS PEQUEÑAS
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    main {
+        display: block;
+    }
+
+    aside,
+    section {
+        width: 100%;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .card {
+        width: auto;
+    }
+}
+```
